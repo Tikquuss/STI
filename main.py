@@ -143,13 +143,13 @@ class Student(gym.Env):
         choices_tmp = np.arange(self.n_choices)
         for x_i, y_i in zip(state["choices"], y_pred.detach().numpy()) :
             try :
-              a = x_i.index(y_i)
+            	a = x_i.index(y_i)
             except ValueError:
-              idx = np.argmin(np.absolute(y_i - np.array(x_i)))
-              if abs(x_i[idx] - y_i) <= self.loss_threshold :
-                  a = idx
-              else : 
-                  a = np.random.choice(choices_tmp)
+            	idx = np.argmin(np.absolute(y_i - np.array(x_i)))
+            	if abs(x_i[idx] - y_i) <= self.loss_threshold :
+            		a = idx
+            	else : 
+            		a = np.random.choice(choices_tmp)
             action.append(a)
         return action, y_pred 
 

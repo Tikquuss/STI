@@ -48,6 +48,15 @@ Diagramme de composant algorithme d’apprentissage-apprenant, permettant l’ac
      alt="Diagramme de séquence entre le tuteur, l’apprenant et le système d’évaluation.">
 Diagramme de séquence entre le tuteur, l’apprenant et le système d’évaluation.
 
+<img class="fit-picture"
+     src="images/gradio1.png"
+     alt="Prototype pour la g´en´eration des questions.">
+<img class="fit-picture"
+     src="images/gradio2.png"
+     alt="Prototype pour la g´en´eration des questions.">
+Prototype pour la génération des questions réalisé avec la librairie [gradio](https://www.gradio.app/) : vous envoyez un corpus et le tuteur vous génere les questions.Voir le notebook [notebooks/2)ECT_Tuteur.ipynb](notebooks/2\)ECT_Tuteur.ipynb) pour plus de détails. 
+
 # Matériels Supplementaires : 
 - Rapport complet : https://drive.google.com/file/d/1wQQ7_RWGwNUvR-ps5OaLF_8xXUMU-uRc/view?usp=sharing
-- Experimentations : voir le dossier [notebooks](notebooks)
+- Experimentations : voir le dossier [notebooks](notebooks) pour les notebooks google Colab
+- Voir le fichier [main.py](main.py) pour plus d'informations sur l'implementation du modele du Tuteur, du modele de l'apprenant, des méthodes d'apprentissage et d'évaluation, des modele de deep learning et des méthodes de visualisation dans le cas des QCMs. Pour l'ECT (Etude de Comprehension de Texte), voir directement les notebooks.
